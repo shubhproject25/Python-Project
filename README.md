@@ -13,7 +13,7 @@ This is a simple application developed in Python to run a basic Train Reservatio
 The system provides the following core features through separate Admin and Passenger menus:
 
 ### Passenger Features
- dUser Login/Sign Up: Passengers can log in with existing credentials or sign up for a new account.
+ User Login/Sign Up: Passengers can log in with existing credentials or sign up for a new account.
  View Train Information: Search and display details (Train Number, Route, Schedule) for any available train.
  Book Train Ticket: Select a train, specify the start and end stations, and the number of seats to book. Includes validation for train existence, station validity, and route order.
  Cancel Ticket: A placeholder function to simulate ticket cancellation using a PNR number.
