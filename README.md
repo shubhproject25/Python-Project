@@ -14,14 +14,20 @@ The system provides the following core features through separate Admin and Passe
 
 ### Passenger Features
  User Login/Sign Up: Passengers can log in with existing credentials or sign up for a new account.
+ 
  View Train Information: Search and display details (Train Number, Route, Schedule) for any available train.
+ 
  Book Train Ticket: Select a train, specify the start and end stations, and the number of seats to book. Includes validation for train existence, station validity, and route order.
+ 
  Cancel Ticket: A placeholder function to simulate ticket cancellation using a PNR number.
 
 ### Admin Features
  Admin Login: Secure login for administrators.
+ 
  Add New Train: Input details for a new train (name, number, route, and schedule) to be added to the system's database.
+ 
  View All Trains: Display the details of all trains currently available in the system.
+ 
  Remove Train: Delete an existing train from the system.
 
 ---
@@ -42,7 +48,7 @@ The system provides the following core features through separate Admin and Passe
 
 ---
 
-## ⚙️ Steps to Install & Run the Project
+## Steps to Install & Run the Project
 
 1.  Prerequisites: Ensure you have Python 3.x installed on your system.
 2.  Download Files: Download all the provided Python files (`Project.py`, `train.py`, `booking.py`, `log.py`, `func.py`) into the same directory.
@@ -60,7 +66,7 @@ The system provides the following core features through separate Admin and Passe
 
 ---
 
-## 🧪 Instructions for Testing
+## Instructions for Testing
 
 Test the application by performing the following actions for both user roles:
 
