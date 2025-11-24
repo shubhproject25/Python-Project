@@ -1,1 +1,99 @@
-# Python-Project
+#  Simple Train Reservation System
+
+---
+
+## Overview of the Project
+
+This is a simple application developed in Python to run a basic Train Reservation System. It allows users to manage train data (Admin) and perform common passenger operations like viewing train information, booking tickets, and canceling tickets(Passenger). The system uses dictionaries to store train and user details, with separate modules for logical separation of functionalities like login, train details, booking, and administrative tasks.
+
+---
+
+## Features
+
+The system provides the following core features through separate Admin and Passenger menus:
+
+### Passenger Features
+ dUser Login/Sign Up: Passengers can log in with existing credentials or sign up for a new account.
+ View Train Information: Search and display details (Train Number, Route, Schedule) for any available train.
+ Book Train Ticket: Select a train, specify the start and end stations, and the number of seats to book. Includes validation for train existence, station validity, and route order.
+ Cancel Ticket: A placeholder function to simulate ticket cancellation using a PNR number.
+
+### Admin Features
+ Admin Login: Secure login for administrators.
+ Add New Train: Input details for a new train (name, number, route, and schedule) to be added to the system's database.
+ View All Trains: Display the details of all trains currently available in the system.
+ Remove Train: Delete an existing train from the system.
+
+---
+
+##  Technologies/Tools Used
+
+ Language: Python 3.x
+ Core Libraries: Standard Python libraries. The project is organized into multiple Python files (`.py`) to manage different application components.
+
+### File Structure
+| File | Description |
+| :--- | :--- |
+| `Project.py` | The main executable file containing the application loop and menu logic. |
+| `train.py` | Contains the `traindetails` data dictionary and the function to view a single train's details. |
+| `booking.py` | Contains the `book` function for ticket reservation logic and validation. |
+| `log.py` | Handles user login and sign-up logic for both Admin and Passenger roles. |
+| `func.py` | Groups administrative and utility functions (`add_train`, `remove`, `cancel`). |
+
+---
+
+## ⚙️ Steps to Install & Run the Project
+
+1.  Prerequisites: Ensure you have Python 3.x installed on your system.
+2.  Download Files: Download all the provided Python files (`Project.py`, `train.py`, `booking.py`, `log.py`, `func.py`) into the same directory.
+3.  Run the Application: Open your terminal or command prompt, navigate to the directory where the files are saved, and execute the main file:
+    ```bash
+    python "Project.py"
+    ```
+4.  Login: Follow the on-screen prompts to choose your login type (Admin or Passenger) or Sign Up.
+
+### Default Credentials
+| Role | Username | Password |
+| :--- | :--- | :--- |
+| Admin | `aman` | `admin123` |
+| Passenger | `prateek` | `gvsprateek` |
+
+---
+
+## 🧪 Instructions for Testing
+
+Test the application by performing the following actions for both user roles:
+
+### Passenger Testing
+1.  Test Login & Logout:
+     Log in using the default passenger credentials (`prateek`/`gvsprateek`).
+     Select `4. LOG OUT`.
+2.  Test Train Info:
+     Log back in and select `1. TRAIN INFO`.
+     Enter a valid train name (e.g., `varanasi express`).
+     Enter an invalid train name to check the error message.
+3.  Test Booking (Successful):
+     Select `2. BOOK TRAIN`.
+     Enter a valid train (e.g., `varanasi express`).
+     Enter valid start and end stations (e.g., `delhi` to `lucknow`).
+     Enter the number of seats. Verify the "Successfully booked" message.
+4.  Test Booking (Validation):
+     Attempt to book with an invalid start/end station (e.g., `mumbai` to `delhi` on `varanasi express`).
+     Attempt to book where the end station comes before the start station (e.g., `varanasi` to `kanpur` on `varanasi express`).
+5.  Test Sign Up:
+     Choose `3. Sign Up as Passenger` from the main login screen and create a new account, then log in with it.
+
+### Admin Testing
+1.  Test Login & Logout:
+     Log in using the default admin credentials (`aman`/`admin123`).
+     Select `4. LOG OUT`.
+2.  Test View All Trains:
+     Log back in and select `2. VIEW ALL TRAINS` to confirm all train data is displayed correctly.
+3.  Test Add Train:
+     Select `1. ADD TRAIN`.
+     Enter a new, unique train name and follow the prompts for train number, route stations, and schedules.
+     After adding, check the train details using `2. VIEW ALL TRAINS`.
+4.  Test Remove Train:
+     Select `3. REMOVE TRAIN`.
+     Enter the name of the train you just added.
+     Verify the "This train has been removed" message.
